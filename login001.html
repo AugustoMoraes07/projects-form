@@ -24,15 +24,92 @@
             
          }
          body>div#container{
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
+            width: 400px;
+            height: 411px;
 
-            transform: translate( -50%, 50%);
+            transform: translate( -50%, -50%);
             text-align: center;
-            background-color:#927bf756;
+            background-color:#5e4ea356;
             padding: 10px;
-         }
+            border-radius: 10px;
+            border: 2px solid #aa9fda42;
+
+        }
+        
+        body>div#container h1, p{
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        body>div#container>form {
+            padding: 10px 0px;
+        }
+        
+        input#iusername{
+            width: 80%;
+            height: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid #aa9fda42;
+            background-color:#5e4ea356;
+            margin-bottom: 20px;
+        }
+        input#ipassword{
+            width: 80%;
+            height: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid #aa9fda42;
+            background-color:#5e4ea356;
+            
+        }
+
+        div#container>form>p>label{
+            padding-right: 50px;
+        }
+        p>a{ 
+            text-decoration: none;
+            color: white;
+        }
+        p>a:hover{
+            text-decoration: underline;
+        }
+
+
+        input#login{
+            width: 80%;
+            height: 50px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 35px;
+            border: 2px solid #aa9fda5d;
+            font-weight: bold;
+            box-sizing: border-box;
+            
+        }
+        input#login:hover{
+            
+            font-size: 1em;
+            width: 85%;
+            height: 55px;
+            
+            transition: 0.4s;
+        }
+
+
+        
+        ::-webkit-input-placeholder{
+            color: white;
+        }
+        :-moz-placeholder{color: white;}
+        ::-moz-placeholder{
+            color: white;
+        }
+
     </style>
 </head>
 
@@ -48,10 +125,10 @@
         </p>
         
         <p>
-            <input type="submit" value="Login">
+            <input type="submit" id="login" value="Login">
         </p>
         </form>
-        <p>Don't have account? <a href="#">Register</a></p>
+        <p><a href="#">Don't have account? Register</a></p>
     </div>
 </body>
 </html>
